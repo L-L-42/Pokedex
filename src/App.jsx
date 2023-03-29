@@ -1,17 +1,24 @@
-import React from 'react';
-import PokemonCard from './components/Pokemoncard.jsx';
-import { useState } from 'react'
+import React from "react";
+import PokemonCard from "./components/Pokemoncard.jsx";
+import { useState } from "react";
 
-import './App.css';
-
+import "./App.css";
 
 const App = () => {
   return (
-    <div className='pokemoncard'>
-      <PokemonCard pokemon = {pokemonList[0]} />
+    <div className="pokemoncard">
+      <PokemonCard pokemon={pokemonList[0]} />
     </div>
   );
 };
+
+//const App = () => {
+//return (
+//<div className='pokemoncard'>
+//<PokemonCard pokemon = {pokemonList[0]} />
+//</div>
+//);
+//};
 
 const pokemonList = [
   {
