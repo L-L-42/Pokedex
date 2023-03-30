@@ -25,7 +25,9 @@ const App = () => {
   return (
     <div className="pokemoncard">
       {currentPokemonIndex > 0 && (
-        <button onClick={previousPokemon}>Précédent</button>
+        <button className="button" onClick={previousPokemon}>
+          Précédent
+        </button>
       )}
       {currentPokemonIndex < pokemonList.length - 1 && (
         <button onClick={nextPokemon}>Suivant</button>
