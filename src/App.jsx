@@ -10,9 +10,8 @@ const App = () => {
   return (
     <div className="pokemoncard">
       <Navbar
-        setCurrentPokemonIndex={setCurrentPokemonIndex}
-        currentPokemonIndex={currentPokemonIndex}
         pokemonList={pokemonList}
+        setCurrentPokemonIndex={setCurrentPokemonIndex}
       />
       <PokemonCard pokemon={pokemonList[currentPokemonIndex]} />
     </div>
