@@ -17,6 +17,7 @@ function Navbar({ currentPokemonIndex, pokemonList, setCurrentPokemonIndex }) {
 
   return (
     <nav>
+      <div>{currentPokemonIndex === 3 ? alert("pika pikachu !!!") : ""}</div>
       {currentPokemonIndex > 0 && (
         <button className="button" onClick={previousPokemon}>
           Précédent
